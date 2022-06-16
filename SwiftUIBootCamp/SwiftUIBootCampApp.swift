@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIBootCampApp: App {
     var body: some Scene {
         WindowGroup {
-            MaskViewStarRating()
+            CoreDataBootcamp()
         }
     }
 }
