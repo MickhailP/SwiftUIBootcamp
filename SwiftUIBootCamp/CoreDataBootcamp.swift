@@ -50,7 +50,7 @@ class CoreDataViewModel: ObservableObject  {
     }
     
     func updateFruit(fruit: Fruit) {
-        let currentName = fruit.name
+        let currentName = fruit.name ?? "Unknown"
         
         let newName = currentName + "!"
         fruit.name = newName
