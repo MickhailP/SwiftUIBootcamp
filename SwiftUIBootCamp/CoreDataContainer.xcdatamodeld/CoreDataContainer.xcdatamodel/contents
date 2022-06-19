@@ -2,24 +2,24 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Business" representedClassName="Business" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="departments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Department" inverseName="buisneses" inverseEntity="Department"/>
-        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="buisnes" inverseEntity="Employee"/>
+        <relationship name="departments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Department" inverseName="businesses" inverseEntity="Department"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="business" inverseEntity="Employee"/>
     </entity>
     <entity name="Department" representedClassName="Department" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="buisneses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Business" inverseName="departments" inverseEntity="Business"/>
+        <relationship name="businesses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Business" inverseName="departments" inverseEntity="Business"/>
         <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="department" inverseEntity="Employee"/>
     </entity>
     <entity name="Employee" representedClassName="Employee" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="dateJoined" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="buisnes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Business" inverseName="employees" inverseEntity="Business"/>
+        <relationship name="business" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Business" inverseName="employees" inverseEntity="Business"/>
         <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="employees" inverseEntity="Department"/>
     </entity>
     <elements>
         <element name="Business" positionX="-63" positionY="-18" width="128" height="74"/>
-        <element name="Department" positionX="220.6384887695312" positionY="62.26019287109375" width="136.1340942382812" height="88"/>
-        <element name="Employee" positionX="-289.9473876953125" positionY="13.15493774414062" width="128" height="118"/>
+        <element name="Department" positionX="220.6384887695312" positionY="62.26019287109375" width="136.1340942382812" height="74"/>
+        <element name="Employee" positionX="-289.9473876953125" positionY="13.15493774414062" width="128" height="104"/>
     </elements>
 </model>
