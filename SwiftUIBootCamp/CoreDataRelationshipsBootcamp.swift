@@ -52,6 +52,14 @@ class CoreDataRelationshipViewModel: ObservableObject {
     func getBusinesses() {
         let request = NSFetchRequest<Business>(entityName: "Business")
         
+        let sort = NSSortDescriptor(keyPath: \Business.name, ascending: true)
+        
+        request.sortDescriptors = [sort]
+        
+//        let filter = NSPredicate(format: "name = %@", "Apple")
+//        request.predicate = filter
+        
+        
         do {
             businesses = try manager.context.fetch(request)
         } catch {
@@ -80,6 +88,12 @@ class CoreDataRelationshipViewModel: ObservableObject {
         }
     }
     
+    func updateBusiness() {
+        
+        let existingBusiness = businesses[1]
+        existingBusiness.addToDepartments(departments[1])
+        save()
+    }
     
     func addBusiness() {
         let newBusiness = Business(context: manager.context)
@@ -113,12 +127,13 @@ class CoreDataRelationshipViewModel: ObservableObject {
     
     func addEmployee() {
         let newEmployee = Employee(context: manager.context)
-        newEmployee.name = "Angela"
-        newEmployee.age = 35
+        newEmployee.name = "Jim"
+        newEmployee.age = 24
         newEmployee.dateJoined = Date()
         
         
-//        newEmployee.business = businesses[0]
+        newEmployee.business = businesses[2]
+        newEmployee.department = departments[1]
         
         save()
     }
@@ -151,8 +166,8 @@ struct CoreDataRelationshipsBootcamp: View {
                 VStack{
                     Button {
 //                        vm.addBusiness()
-                        vm.addDepartment()
-//                        vm.addEmployee()
+//                        vm.addDepartment()
+                        vm.addEmployee()
                     } label: {
                         Text("Add new business")
                             .padding()
