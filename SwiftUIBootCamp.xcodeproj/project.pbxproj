@@ -18,6 +18,7 @@
 		D7B024D22849C282004549B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B024D12849C282004549B5 /* Assets.xcassets */; };
 		D7B024D52849C282004549B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B024D42849C282004549B5 /* Preview Assets.xcassets */; };
 		D7BEF3E02862339D0026BC05 /* BackgroundBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BEF3DF2862339D0026BC05 /* BackgroundBootcamp.swift */; };
+		D7BEF3E528624E700026BC05 /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BEF3E428624E700026BC05 /* WeakSelfBootcamp.swift */; };
 		D7D97EFB2860D4D400273876 /* BigMountainsFriendCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D97EFA2860D4D400273876 /* BigMountainsFriendCoreData.swift */; };
 		D7D97EFE2860D4EA00273876 /* FriendsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7D97EFC2860D4EA00273876 /* FriendsDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,8 @@
 		D7B024D12849C282004549B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7B024D42849C282004549B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7BEF3DF2862339D0026BC05 /* BackgroundBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundBootcamp.swift; sourceTree = "<group>"; };
+		D7BEF3E328623DE60026BC05 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		D7BEF3E428624E700026BC05 /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 		D7D97EFA2860D4D400273876 /* BigMountainsFriendCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainsFriendCoreData.swift; sourceTree = "<group>"; };
 		D7D97EFD2860D4EA00273876 /* FriendsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,8 @@
 				D7A759FF285AE80E001C8297 /* CoreDataContainer.xcdatamodeld */,
 				D704C43F285A5CC6005B4CA5 /* FruitsContainer.xcdatamodeld */,
 				D7BEF3DF2862339D0026BC05 /* BackgroundBootcamp.swift */,
+				D7BEF3E328623DE60026BC05 /* .gitignore.md */,
+				D7BEF3E428624E700026BC05 /* WeakSelfBootcamp.swift */,
 				D7B024D12849C282004549B5 /* Assets.xcassets */,
 				D7B024D32849C282004549B5 /* Preview Content */,
 			);
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BEF3E528624E700026BC05 /* WeakSelfBootcamp.swift in Sources */,
 				D704C441285A5CC6005B4CA5 /* FruitsContainer.xcdatamodeld in Sources */,
 				D7B024D02849C27F004549B5 /* MultipleSheets.swift in Sources */,
 				D7B024CE2849C27F004549B5 /* SwiftUIBootCampApp.swift in Sources */,

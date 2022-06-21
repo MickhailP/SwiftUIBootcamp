@@ -12,7 +12,7 @@ struct SwiftUIBootCampApp: App {
     var body: some Scene {
         WindowGroup {
             
-            BackgroundBootcamp()
+            WeakSelfBootcamp()
             
 //            BigMountainsFriendCoreData()
 //                .environment(\.managedObjectContext, FriendsContainer(forPreview: false).persistentContainer.viewContext)
