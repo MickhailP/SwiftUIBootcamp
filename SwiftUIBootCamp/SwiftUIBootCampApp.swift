@@ -11,8 +11,11 @@ import SwiftUI
 struct SwiftUIBootCampApp: App {
     var body: some Scene {
         WindowGroup {
-            BigMountainsFriendCoreData()
-                .environment(\.managedObjectContext, FriendsContainer(forPreview: false).persistentContainer.viewContext)
+            
+            BackgroundBootcamp()
+            
+//            BigMountainsFriendCoreData()
+//                .environment(\.managedObjectContext, FriendsContainer(forPreview: false).persistentContainer.viewContext)
         }
         
     }
