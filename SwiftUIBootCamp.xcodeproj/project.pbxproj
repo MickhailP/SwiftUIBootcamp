@@ -21,6 +21,7 @@
 		D7BEF3E528624E700026BC05 /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BEF3E428624E700026BC05 /* WeakSelfBootcamp.swift */; };
 		D7D97EFB2860D4D400273876 /* BigMountainsFriendCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D97EFA2860D4D400273876 /* BigMountainsFriendCoreData.swift */; };
 		D7D97EFE2860D4EA00273876 /* FriendsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7D97EFC2860D4EA00273876 /* FriendsDataModel.xcdatamodeld */; };
+		D7D9A39D2863A92E00511EA2 /* EscapingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9A39C2863A92E00511EA2 /* EscapingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D7BEF3E428624E700026BC05 /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 		D7D97EFA2860D4D400273876 /* BigMountainsFriendCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainsFriendCoreData.swift; sourceTree = "<group>"; };
 		D7D97EFD2860D4EA00273876 /* FriendsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		D7D9A39C2863A92E00511EA2 /* EscapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				D7B024CF2849C27F004549B5 /* MultipleSheets.swift */,
 				D799C0DB284F0AFA0084C541 /* MaskViewStarRating.swift */,
 				D78061E528577357003125A0 /* ArrayBootcamp.swift */,
+				D7D9A39C2863A92E00511EA2 /* EscapingView.swift */,
 				D704C43D285A5A76005B4CA5 /* CoreDataBootcamp.swift */,
 				D7D97EFA2860D4D400273876 /* BigMountainsFriendCoreData.swift */,
 				D7D97EFC2860D4EA00273876 /* FriendsDataModel.xcdatamodeld */,
@@ -180,6 +183,7 @@
 				D7D97EFE2860D4EA00273876 /* FriendsDataModel.xcdatamodeld in Sources */,
 				D704C43E285A5A76005B4CA5 /* CoreDataBootcamp.swift in Sources */,
 				D7BEF3E02862339D0026BC05 /* BackgroundBootcamp.swift in Sources */,
+				D7D9A39D2863A92E00511EA2 /* EscapingView.swift in Sources */,
 				D799C0DC284F0AFA0084C541 /* MaskViewStarRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
