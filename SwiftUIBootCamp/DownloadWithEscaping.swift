@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct PostModel: Identifiable, Codable {
-    
-    let userId: Int
-    let id: Int
-    let title: String
-    let body: String
-}
+//struct PostModel: Identifiable, Codable {
+//    
+//    let userId: Int
+//    let id: Int
+//    let title: String
+//    let body: String
+//}
 
 
 class DownloadWithEscapingViewModel: ObservableObject {
@@ -77,6 +77,7 @@ class DownloadWithEscapingViewModel: ObservableObject {
     }
     
     func downloadData(from url: URL, completionHandler: @escaping (_ data: Data?) -> Void) {
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data else {
