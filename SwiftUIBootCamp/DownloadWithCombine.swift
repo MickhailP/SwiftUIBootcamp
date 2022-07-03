@@ -53,14 +53,14 @@ class DownloadWithCombineViewModel: ObservableObject {
         //.subscribe(on: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)
         
-        //            .tryMap { (data, response) -> Data in
-        //                guard let response = response as? HTTPURLResponse,
-        //                response.statusCode >= 200 && response.statusCode < 300 else{
-        //                    throw URLError(.badServerResponse)
-        //                }
-        //                return data
-        //            }
-        //BETTER SOLUTION
+//            .tryMap { (data, response) -> Data in
+//                guard let response = response as? HTTPURLResponse,
+//                response.statusCode >= 200 && response.statusCode < 300 else{
+//                    throw URLError(.badServerResponse)
+//                }
+//                return data
+//            }
+            //BETTER SOLUTION
             .tryMap(handleOutput)
             .decode(type: [PostModel].self, decoder: JSONDecoder())
             //handle errors this way to write more shorter .sink
